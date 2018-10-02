@@ -1,0 +1,21 @@
+创建版本库repository：
+mkdir yuege（创建一个叫yuege的版本库）
+cd yuegeg
+pwd(查看当前位置
+git init（将其变为git可以管理的版本库）
+
+把文件添加到版本库里：
+git add yuege.txt
+git commit -m"wrote a file"
+
+常见命令：
+git status（仓库的当前状态）
+git diff yuege.txt(查看difference)
+git log(现实从最近到最远的提交日志）
+git log --pretty=oneline
+
+还原版本：
+HEAD,HEAD^,HEAD^^,...,HEAD~100  分别表示当前版本，上一个版本，再上一个版本，上第100个版本
+git reset --hard HEAD^
+git reset --hard 9e0e4(回到未来版本，9e0e4是commit id的前几位就行）
+git reflog(记录自己的每一次命令）
