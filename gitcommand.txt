@@ -19,3 +19,13 @@ HEAD,HEAD^,HEAD^^,...,HEAD~100  分别表示当前版本，上一个版本，再
 git reset --hard HEAD^
 git reset --hard 9e0e4(回到未来版本，9e0e4是commit id的前几位就行）
 git reflog(记录自己的每一次命令）
+
+创建与合并分支：
+git checkout -b dev
+==git branch dev (创建新分支dev)
+  git checkout dev(切换到分支dev)
+git branch 查看当前分支
+git merge dev  用于合并指定分支(dev)到当前分支(假设时master) 
+git branch -d dev 删除分支
+
+git log --graph --pretty=oneline --abbrev-commit  查看分支合并图
